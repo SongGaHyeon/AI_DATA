@@ -8,9 +8,7 @@
   2. GBM 이용 코드에서 random_state를 이용해 난수 생성을 해준 이유를 알고 싶다.
   3. 변수 중요도를 그린 plt에서 
 
-'''
-python
-
+'''python
 ftr_importances_values = gb_clf.feature_importances_
 ftr_importances = pd.Series(ftr_importances_values, index=X_train.columns)
 ftr_top15 = ftr_importances.sort_values(ascending=False)[:15]
