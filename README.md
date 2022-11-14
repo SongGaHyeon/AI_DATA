@@ -9,9 +9,12 @@
   3. 변수 중요도를 그린 plt에서 
 
 '''
+python
+
 ftr_importances_values = gb_clf.feature_importances_
 ftr_importances = pd.Series(ftr_importances_values, index=X_train.columns)
 ftr_top15 = ftr_importances.sort_values(ascending=False)[:15]
+
 '''
   이 부분에 대해 이해가 필요하다. 
 
